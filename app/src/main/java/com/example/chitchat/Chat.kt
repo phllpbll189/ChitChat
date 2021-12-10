@@ -1,5 +1,8 @@
 package com.example.chitchat
-data class Chats(var count: Int, var date: String, var messages: List<Chat>)
+
+import org.json.JSONObject
+
+data class Chats(var chats: Chats, var count: Int, var date: String, var messages: List<Chat>)
 data class Chat(
     var _id: String,
     var client: String,
